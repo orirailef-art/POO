@@ -1,31 +1,29 @@
 public class Principito {
-
     // Atributos
-    private Flor FlorPrincipito;
+    private Flor florPrincipito;
 
     // Constructor vacío
     public Principito() {
     }
 
     // Constructor con todos los atributos
-    public Principito(Flor FlorPrincipito) {
-        this.FlorPrincipito = FlorPrincipito;
+    public Principito(Flor florPrincipito) {
+        this.florPrincipito = florPrincipito;
     }
 
     // Getter
     public Flor getFlorPrincipito() {
-        return FlorPrincipito;
+        return florPrincipito;
     }
 
     // Setter
-    public void setFlorPrincipito(Flor FlorPrincipito1) {
-        this.FlorPrincipito = FlorPrincipito1;
+    public void setFlorPrincipito(Flor florPrincipito) {
+        this.florPrincipito = florPrincipito;
     }
 
     // Comportamientos
-
     public void cuidar() {
-        System.out.println("El Principito cuida de su flor todos los días.");
+        System.out.println("\nEl Principito cuida de su flor todos los días.");
     }
 
     public void regar() {
@@ -33,8 +31,8 @@ public class Principito {
     }
 
     public void quitar() {
-        if (FlorPrincipito != null && FlorPrincipito.getOruga() > 0) {
-            FlorPrincipito.setOruga(FlorPrincipito.getOruga() - 1);
+        if (florPrincipito != null && florPrincipito.getOrugas() > 0) {
+            florPrincipito.setOrugas(florPrincipito.getOrugas() - 1);
             System.out.println("El Principito le quita una oruga a la flor.");
         } else {
             System.out.println("La flor no tiene orugas.");
@@ -49,17 +47,13 @@ public class Principito {
         System.out.println("El Principito ama mucho a su flor.");
     }
 
-    // Punto 3 del TP
     public void imprimirFlorPrincipito() {
-
-        if (FlorPrincipito != null) {
-
+        if (florPrincipito != null) {
             System.out.println("\nDatos de la flor del Principito:");
-            System.out.println("Actitud: " + FlorPrincipito.getActitud());
-            System.out.println("Apariencia: " + FlorPrincipito.getApariencia());
-            System.out.println("Estado: " + FlorPrincipito.getEstado());
-            System.out.println("Cantidad de orugas: " + FlorPrincipito.getOruga());
-
+            System.out.println("Actitud: " + florPrincipito.getActitud());
+            System.out.println("Apariencia: " + florPrincipito.getApariencia());
+            System.out.println("Estado: " + florPrincipito.getEstado());
+            System.out.println("Cantidad de orugas: " + florPrincipito.getOrugas());
         } else {
             System.out.println("El Principito no tiene una flor.");
         }
