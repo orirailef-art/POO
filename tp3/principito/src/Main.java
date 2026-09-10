@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //  FLOR DEL TEXTO LITERARIO
+        // FLOR DEL TEXTO LITERARIO
         Flor florDelTexto = new Flor(
             "un poco vanidosa",
             "muy hermosa",
@@ -10,7 +10,7 @@ public class Main {
             3
         );
 
-        //  FLOR HECHA A MEDIDA
+        // FLOR HECHA A MEDIDA
         Flor miFlor = new Flor(
             "muy tranquila",
             "pequeña y azul",
@@ -18,33 +18,34 @@ public class Main {
             5
         );
 
-        // TEXTO DINÁMICO - FLOR DEL TEXTO
-        System.out.println("----- FLOR DEL TEXTO -----");
+        // TEXTO CON LA FLOR DEL TEXTO
+        System.out.println("\n----- FLOR DEL TEXTO LITERARIO -----");
 
         System.out.println(
             "El principito tenía una flor que amaba mucho. "
-            + "La flor era " + florDelTexto.getApariencia()
-            + " y " + florDelTexto.getActitud() + "."
+            +"Cuidaba de ella todos los días, la regaba y le quitaba las orugas. "
+            +"La flor, aunque " + florDelTexto.getActitud()
+            + ", era " + florDelTexto.getApariencia()
+            + " y agradecía al principito por su dedicación. "
+            + "Un día, el principito decidió explorar otros planetas y,"
+            + "aunque no quería dejar sola a su flor, sabía que debía "
+            + "continuar su viaje para aprender más sobre el universo."
         );
 
-        System.out.println(
-            "La flor estaba " + florDelTexto.getEstado() + "."
-        );
-
-        //  TEXTO DINÁMICO - FLOR INVENTADA
-
-        System.out.println("\n----- MI FLOR -----");
+        // TEXTO CON MI FLOR
+       System.out.println("\n----- MI FLOR -----");
 
         System.out.println(
             "El principito tenía una flor que amaba mucho. "
-            + "La flor era " + miFlor.getApariencia()
-            + " y " + miFlor.getActitud() + "."
+            +"Cuidaba de ella todos los días, la regaba y le quitaba las orugas. "
+            +"La flor, aunque " + miFlor.getActitud()
+            + ", era " + miFlor.getApariencia()
+            + " y agradecía al principito por su dedicación. "
+            + "Un día, el principito decidió explorar otros planetas y, "
+            + "aunque no quería dejar sola a su flor, sabía que debía "
+            + "continuar su viaje para aprender más sobre el universo."
         );
-
-        System.out.println(
-            "La flor estaba " + miFlor.getEstado() + "."
-        );
-       
+        
         // CREAR AL PRINCIPITO
         Principito principito = new Principito(florDelTexto);
 
@@ -55,7 +56,6 @@ public class Main {
         principito.quitar();
         principito.explorar();
 
-        // PUNTO 3 DEL TP
         principito.imprimirFlorPrincipito();
     }
 }
