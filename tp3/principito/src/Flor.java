@@ -4,7 +4,7 @@ public class Flor {
     private String actitud;
     private String apariencia;
     private String estado;
-    private int oruga;
+    private int orugas;
 
     // Constructor vacío
     public Flor() {
@@ -15,11 +15,10 @@ public class Flor {
         this.actitud = actitud;
         this.apariencia = apariencia;
         this.estado = estado;
-        this.oruga = oruga;
+        this.orugas = oruga;
     }
 
     // Getters y Setters
-
     public String getActitud() {
         return actitud;
     }
@@ -44,12 +43,12 @@ public class Flor {
         this.estado = estado1;
     }
 
-    public int getOruga() {
-        return oruga;
+    public int getOrugas() {
+        return orugas;
     }
 
-    public void setOruga(int oruga1) {
-        this.oruga = oruga1;
+    public void setOrugas(int orugas1) {
+        this.orugas = orugas1;
     }
 
     // Comportamiento
