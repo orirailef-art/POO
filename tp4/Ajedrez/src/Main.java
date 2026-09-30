@@ -52,7 +52,7 @@ public class Main {
             torresBlancas[i] = new Torre(
                 "Blanco",
                 "homérica",
-                "",
+                "lentas",
                 "directa"
             );
         }
@@ -62,7 +62,7 @@ public class Main {
             torresNegras[i] = new Torre(
                 "Negro",
                 "homérica",
-                "",
+                "lentas",
                 "directa"
             );
         }
@@ -72,7 +72,7 @@ public class Main {
             caballosBlancos[i] = new Caballo(
                 "Blanco",
                 "ligero",
-                "",
+                "lentas",
                 ""
             );
         }
@@ -82,7 +82,7 @@ public class Main {
             caballosNegros[i] = new Caballo(
                 "Negro",
                 "ligero",
-                "",
+                "lentas",
                 ""
             );
         }
@@ -92,7 +92,7 @@ public class Main {
             alfilesBlancos[i] = new Alfil(
                 "Blanco",
                 "oblicuo",
-                "",
+                "lentas",
                 "sesgo"
             );
         }
@@ -102,7 +102,7 @@ public class Main {
             alfilesNegros[i] = new Alfil(
                 "Negro",
                 "oblicuo",
-                "",
+                "lentas",
                 "sesgo"
             );
         }
@@ -111,7 +111,7 @@ public class Main {
         reinaBlanca[0] = new Reina(
             "Blanco",
             "armada",
-            "",
+            "lentas",
             "encarnizada"
         );
 
@@ -119,15 +119,15 @@ public class Main {
         reinaNegra[0] = new Reina(
             "Negro",
             "armada",
-            "",
-            ""
+            "lentas",
+            "encarnizada"
         );
 
         Rey[] reyBlanco = new Rey[1];
         reyBlanco[0] = new Rey(
             "Blanco",
             "postrero",
-            "",
+            "lentas",
             "tenue"
         );
 
@@ -135,7 +135,7 @@ public class Main {
         reyNegro[0] = new Rey(
             "Negro",
             "postrero",
-            "",
+            "lentas",
             "tenue"
         );
 
