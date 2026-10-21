@@ -84,7 +84,7 @@ public class PiezaDAO {
     public void listarPiezas() {
         String sql = "SELECT P.idPieza, TP.DescripciondePieza AS TipoPieza, C.Descripcion AS Color, "
                    + "P.Descripcion AS ResumenPieza, P.Posicion, P.Movimiento, "
-                   + "P.Comportamiento, P.Velocidad "
+                   + "P.Comportamiento, P.Velocidad, P.Fecha_Creacion "
                    + "FROM pieza P INNER JOIN tipopieza TP ON P.idTipoPieza = TP.idTipoPieza "
                    + "INNER JOIN color C ON P.idColor = C.idColor";
         try (Statement st = con.createStatement();
@@ -98,7 +98,8 @@ public class PiezaDAO {
                     + rs.getString("Posicion") + " | "
                     + rs.getString("Movimiento") + " | "
                     + rs.getString("Comportamiento") + " | "
-                    + rs.getString("Velocidad"));
+                     + rs.getString("Velocidad") + " | "
+                    + rs.getDate("Fecha_Creacion"));
             }
         } catch (SQLException e) {
             System.err.println("Error al listar las piezas.");
